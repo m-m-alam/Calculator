@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+        <br><br><br>
+        <div class="row">
+            <div class="col-4 offset-4">
+                <h1 class="text-center">Calculator</h1>
+                <div class="calculator">
+                    <div class="calculator-head">
+                        <input class="form-control" type="text" name="" id="result" maxlength="10">
+                    </div>
+                    <div class="calculator-body">
+                        <div class="">
+                            <input type="button" class="btn" value="c" onclick="clearResult()">
+                            <input type="button" class="btn" value="+/-">
+                            <input type="button" class="btn" value="%">
+                            <input type="button" class="btn btn-blue" value="/" onclick="InsertNumber('/')">
+                        </div>
+                        <div class="">
+                            <input type="button" class="btn" value="7" onclick="InsertNumber(7)">
+                            <input type="button" class="btn" value="8" onclick="InsertNumber(8)">
+                            <input type="button" class="btn" value="9" onclick="InsertNumber(9)">
+                            <input type="button" class="btn btn-blue" value="x" onclick="InsertNumber('*')">
+                        </div>
+                        <div class="">
+                            <input type="button" class="btn" value="4" onclick="InsertNumber(4)">
+                            <input type="button" class="btn" value="5" onclick="InsertNumber(5)">
+                            <input type="button" class="btn" value="6" onclick="InsertNumber(6)">
+                            <input type="button" class="btn btn-blue" value="-" onclick="InsertNumber('-')">
+                        </div>
+                        <div class="">
+                            <input type="button" class="btn" value="1" onclick="InsertNumber(1)">
+                            <input type="button" class="btn" value="2" onclick="InsertNumber(2)">
+                            <input type="button" class="btn" value="3" onclick="InsertNumber(3)">
+                            <input type="button" class="btn btn-blue" value="+" onclick="InsertNumber('+')">
+                        </div>
+                        <div class="">
+                            <input type="button" class="btn" value="0" onclick="InsertNumber(0)">
+                            <input type="button" class="btn" value="."onclick="InsertNumber('.')">
+                            <input type="button" class="btn" value="DEL" onclick="deletenum()">
+                            <input type="button" class="btn" style="background-color: tomato;" value="=" onclick="calculate()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.calculator{
+    box-shadow: 0 4px 8px 0;
+}
+.calculator:hover{
+    box-shadow: 0 16px 32px 0;
+}
+.calculator-head #result{
+    height: 75px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0 10px;
+    letter-spacing: 3px;
+
+}
+.btn {
+    width: 84px;
+    height: 70px;
+    font-size: 16px;
+    background: #1f2326;
+    color: white;
+}
+.btn-blue{
+    background-color: #5F4BB6;
+}
+.btn:hover{
+    background-color: pink;
+}
